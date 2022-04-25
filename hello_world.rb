@@ -149,3 +149,80 @@ p h[:nome]
 
 p h.keys
 p h.values
+
+#Input de dados
+puts "Digite seu nome: "
+nome = gets
+puts "Seu nome é #{nome}"
+#Isso não funciona e eu não sei pq 
+
+#Condicionais
+valor = 20
+if valor > 50
+    puts "Eu sou maior que 50"    
+else
+    puts "Eu sou menor que 50"
+end
+
+#Elsif
+valor = 20
+if valor > 50
+    puts "Eu sou maior que 50"
+elsif valor = 50
+    puts "Eu sou igual a 50"    
+else
+    puts "Eu sou menor que 50"
+end
+
+#Apenas nil e false são falsos
+
+#Sintaxe bastante usada: 
+valor = 20 
+puts "Eu sou maior que 50" if valor > 50
+
+#Além do IF também tem o Unless
+unless condicao
+    faca_isso
+end
+
+#Ternário: tudo numa linha só. ? if : else
+valor > 50 ? puts "Eu sou maior que 50" : puts "Eu sou menor que 50"
+
+#Case
+linguagem = "Ruby"
+case linguagem
+when "Ruby"
+    puts "Bem vindo ao curso de Ruby"
+when "golang"
+    puts "Curso não disponível"
+else
+    puts "Não conheço essa linguagem"
+end
+
+valor = gets.chomp.to_i
+p valor.class
+p valor
+if valor > 20 
+    puts "Esse valor é maior que 20"
+elsif valor = 20
+    puts "Esse valor é igual a 20"
+else
+    puts "Esse valor é menor que 20"
+end
+
+puts "Digitar um valor"
+valor = gets.chomp.to_i
+
+if valor > 50 && valor < 100
+    puts "Estou entre 50 e 100"
+else 
+    puts "Eu não estou entre 50 e 100"
+end
+
+valor = ""
+
+unless valor.empty?
+    puts "Eu tenho alguma coisa"
+else
+    puts "Eu estou vazia"
+end
