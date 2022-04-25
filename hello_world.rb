@@ -69,3 +69,83 @@ numero = 42
 puts "O número é %05d" % numero 
 
 #Métodos: "!"" altera o valor da variável, ou seja, é mutável. Sem o "!" ele gera uma nova variável na memória
+
+#Sustituir um parametro 
+mensagem = "Olá nome"
+puts mensagem.gsub("nome", "Nicole")
+
+#Números
+
+#irb(main):001:0> 42.class
+# => Integer
+# irb(main):002:0> 42.42.class
+# => Float
+
+#Ruby ignora underline
+puts 11234_00
+
+#Somar um inteiro com um ponto flutuante (float) retorna um ponto flutuante
+
+soma = 5 + 3.5 
+
+p soma
+
+#Tudo é objeto, então a operação é um método, podendo ser executada de outra forma. 
+p 5 + 2
+p 5.send("+", 2)
+
+# Tudo é objeto, "+" é um método
+p 5.object_id
+
+#Transformando + em -
+class Integer
+    def + (outro_valor)
+        self - outro_valor
+    end
+end
+
+p 10 + 4
+#Transformando + em -
+class Integer
+    def * (mult_sub)
+        self - mult_sub
+    end
+end
+
+class Integer
+    def + (soma_mult)
+        self * soma_mult
+    end
+end
+
+class Integer
+    def - (sub_div)
+        self / sub_div
+    end
+end
+
+p 10 * 4
+p 2 + 8
+p 20 - 5
+
+#Veriicar se é par
+p 10.even?
+#Verificar se é ímpar
+p 10.odd?
+
+#Assim cria um hash
+h = {}
+
+#Verifica se é um hash mesmo:
+p h.class
+
+#Atribuindo valores:
+h[:nome] = "Nicole"
+h[:idade] = 20
+
+#Imprime as chaves
+p h
+p h[:nome]
+
+p h.keys
+p h.values
