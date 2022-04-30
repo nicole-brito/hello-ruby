@@ -226,3 +226,95 @@ unless valor.empty?
 else
     puts "Eu estou vazia"
 end
+
+#Laços
+valor = 5 
+while valor > 0
+    puts valor
+    valor = valor - 1
+end
+
+#O for é igual o while, a não ser pela declaração da variável. O conteúdo nos colchetes deve ser algo iterável (que responda a .it) 
+for i in [1, 2 ,3 ,4, 5]
+    puts "O número é #{i}"
+end
+
+#A condição do until é só executar enquanto a condição for falsa (Faça até que a condição seja verdadeira)
+valor = 0 
+until valor == 10 
+    puts valor
+    valor += 1
+end
+
+valor = 0 
+while valor < 10
+    puts "O valor é #{valor}"
+
+break if valor == 5
+
+    valor = valor + 1
+end
+
+for meu_valor in [0, 1, 2, 3, 4]
+    puts "Meu valor é #{meu_valor}"
+end
+
+# Em vez de definir array é só fazer isso
+range = 0...5
+for meu_valor in range
+    puts "Meu valor é #{meu_valor}"
+end
+
+#Em vez de for, que é muito raro, já que each é mais fácil de ler
+lista = [0, 1, 2, 3, 4, 5]
+lista.each do |meu_valor|
+        puts "Meu valor [usando each] é #{meu_valor} "
+end
+
+hash = { nome: "Nico", idade: 29 }
+
+hash.each do | chave, valor |
+    puts "Minha chave é #{chave} com o valor #{valor}"
+end
+
+#Métodos
+def meu_metodo
+    puts "Meu_metodo foi executado"
+end
+
+#parametros não precisa definir tipos. Return é opcional. O ruby sempre retorna o resultado da execução da última linha.
+
+def soma (a, b)
+    return a + b
+end 
+
+def soma (a, b)
+    a + b
+end
+
+def soma valor1, valor2
+    puts "Estou somando #{valor1} e #{valor2}"
+
+    valor1 + valor2
+end
+
+puts "Vou executar a soma"
+puts soma 10, 5
+
+#Argumentos nomeados
+
+def soma valor1, valor2
+    puts "Estou somando #{valor1} e #{valor2}"
+
+    valor1 + valor2
+end
+
+def soma_com_parametros_nomeados: valor1, valor2
+    soma valor1, valor2
+
+puts "Vou executar a soma"
+puts soma_com_parametros_nomeados: valor1: 10, valor2: 5
+
+#Atribuição condicional de variável
+#Sintaxe de atribuição condicional 
+variável ||= "Valor"
