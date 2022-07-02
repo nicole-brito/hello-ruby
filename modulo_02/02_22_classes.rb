@@ -11,11 +11,26 @@
 
 #Isso é uma classe: (a primeira letra maiúscula)
 class PessoaFisica
-    def falar
-        "Olá"
+    def falar(nome = 'pessoal')
+        "Olá, #{nome}!"
     end
 end
 
 #Métodos: ações
 #Propriedades: características
 
+p = PessoaFisica.new
+puts p.falar("Nicole")
+
+#dois textos
+class PessoaFisica
+    def falar2(texto = 'Olá', texto2 = 'Hello')
+        "#{texto}! #{texto2}!"
+    end
+end
+
+#Métodos: ações
+#Propriedades: características
+
+p = PessoaFisica.new
+puts p.falar2
