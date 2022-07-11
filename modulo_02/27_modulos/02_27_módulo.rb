@@ -1,6 +1,6 @@
 #Módulos
 #Módulos são coleções de métodos e atributos que podem ser utilizados em qualquer classe. São similares a classes, mas não possuem construtor. São utilizados para agregar funcionalidades a classes. 
-#Podemos armazenar métodos, constantes, outros módulos e classes dentro de um módulo. A grande diferernça entre módulos e classes é que módulos não sãp instanciados e não possui hierarquia.
+#Podemos armazenar métodos, constantes, outros módulos e classes dentro de um módulo. A grande diferernça entre módulos e classes é que módulos não são instanciados e não possui hierarquia.
 
 #PRINCIPAIS OBJETIVOS DO MÓDULO
 #1. Organizar o código
