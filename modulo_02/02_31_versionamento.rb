@@ -8,5 +8,5 @@ X.Y.Z = Major.Minor.Patch
 
     gem 'pipipi', '1.1.1' = Versão exata
     gem 'popopo', '>=1.1.1', = A partir da versão x.x.x
-    gem 'lerolero' '~>1.5.0' = Versão 'parcial' atual (Aproximadamente esse versão)
+    gem 'lerolero' '~>1.5.0' = Versão 'parcial' atual (Aproximadamente esse versão)s
 =end
